@@ -10,6 +10,10 @@ The system computes full 3-axis orientation (Roll, Pitch, Yaw) by fusing high-fr
 * **Gyro Integration for Yaw:** Integrates Z-axis angular velocity over time to track heading changes.
 * **Real-Time Serial Pipeline:** Streams 6-axis raw telemetry (`ax, ay, az, gx, gy, gz`) at 115200 baud over USB UART.
 * **3D Visualizer:** Real-time aircraft orientation visualizer rendered using VPython, dynamically responding to physical sensor movement.
+* https://github.com/user-attachments/assets/05956f6b-ba61-459e-a9ae-b4f380fa8c5b
+
+
+
 
 ## 📁 Repository Structure
 * `esp8266_mpu6050.ino`: NodeMCU firmware reading I2C sensor registers via `MPU6050` and `Wire` libraries, streaming raw CSV telemetry over Serial.
