@@ -22,12 +22,12 @@ scene.height = 1050
 scene.background = color.gray(0.1)
 scene.range = 5
 
-# Uçak benzeri bir şekil oluşturalım ki yönü belli olsun
+# Uçak benzeri bir şekil oluşturuyorum
 govde = box(length=4, width=1, height=0.5, color=color.green)
 kanat = box(length=1, width=4, height=0.1, pos=vector(0, 0, 0), color=color.blue)
 kuyruk = box(length=1, width=1.5, height=0.5, pos=vector(-1.5, 0.5, 0), color=color.purple)
 
-# Tüm parçaları tek bir nesne gibi hareket ettirmek için 'compound' kullanıyoruz
+# Tüm parçaları tek bir nesne gibi hareket ettirmek için 'compound' kullanıyorum
 sensor_obj = compound([govde, kanat, kuyruk])
 
 # Eksen Okları
@@ -44,7 +44,7 @@ yaw = 0.0
 # Zaman hesabı için (İntegral alırken dt lazım)
 onceki_zaman = time.time()
 
-# Filtre Katsayısı (Abiye anlatacağın kısım burası)
+# Filtre Katsayısı
 # 0.98 -> Jiroskopa güven (Hızlı tepki)
 # 0.02 -> İvmeölçere güven (Drifti/Kaymayı düzelt)
 alpha = 0.98 
